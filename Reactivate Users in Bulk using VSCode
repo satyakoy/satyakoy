@@ -1,0 +1,16 @@
+URL - https://nicolas.vuillamy.fr/reactivate-all-the-sandbox-users-with-invalid-emails-in-3-clicks-2265af4e3a3d
+
+Intro
+Some days ago, I had to create a Salesforce sandbox where several members of the project teams will be able to make updates.
+I was about to manually update one by one all users to remove the .invalid at the end of their email, then I remembered that such operation is pretty boring to perform everytime on each sandbox, and I’m not a fan of boring repetitive operations.
+So why not using an hour to create a new sfdx-hardis command that would do that with a few clicks and 10 seconds ?
+And command sfdx hardis:org:user:activateinvalid was born 🤓
+Usage
+Please follow sfdx-hardis installation instructions , launch Visual Studio Code in an empty folder (or a sfdx project if you have one), then open sfdx-hardis extension (in the left pane).
+Then click on command Operations -> Activate .invalid user emails in sandbox
+
+If you do not have a selected Salesforce org, just login in your web browser as requested.
+You now have the choice between setting valid emails to:
+All users (with a .invalid email)
+Users assigned to a list a profile(s)
+Users selected one by one
